@@ -16,6 +16,53 @@ body{
     color: white;
 }
 
+/* GENERICS */
+
+a{
+    text-decoration: none;
+    color: white;
+
+}
+
+ul{
+    list-style-type: none;
+    
+}
+
+h6{
+    color: lightgrey;
+}
+
+
+
+/* MARGIN BOTTOM */
+.mb-5{
+    margin-bottom: 5px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-15{
+    margin-bottom: 15px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.mb-25{
+    margin-bottom: 25px;
+}
+.mb-30{
+    margin-bottom: 30px;
+}
+.mb-35{
+    margin-bottom:35px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+.mb-50{
+    margin-bottom:50px;
+}
 
 
 
@@ -42,11 +89,12 @@ body{
 
 
 /* ?MAIN */
-
+/* MAIN */
 main{
     flex-grow: 1;
     margin-top: 80px;
     background-color: #141922;
+    padding: 30px;
 
 
     overflow-y: scroll;
@@ -66,6 +114,53 @@ header{
 }
 
 
+/* NAVBAR */
+
+.navbar li{
+    padding: 10px 20px;
+    
+}
+
+
+.navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  
+    
+
+}
+
+
+
+/********SONGS********/
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.col{
+    text-align: center;
+}
+
+.card{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin: 10px;
+    color: black;
+
+}
+
+.john-doe, .popular-artists{
+    margin-top: 30px;
+}
+
+
 
 
 
@@ -79,21 +174,59 @@ footer{
 
 
 
+
+
+
+
+
+
+
 /* **********************************
             MEDIA QUERY
 ********************************** */
 
 
 
+/* ************** DA TABLET IN POI ****************** */
+
 @media screen and (min-width:768px) {
 
+
+    /* SIDEBAR */
     .sidebar{
         flex-basis: 200px;
     }
 
+
+
+    /* HEADER */
     header{
         width: calc(100% - 200px);
     }
+
+}
+
+
+
+
+/* ************** DA LAPTOP IN POI ****************** */
+
+@media screen and (min-width:992px) {
+
+
+
+
+
+}
+
+
+/* ************** DA DESKTOP IN POI ****************** */
+
+@media screen and (min-width:1200px) {
+
+
+
+    
 
 }
 
