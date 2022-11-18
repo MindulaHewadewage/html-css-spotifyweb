@@ -81,45 +81,20 @@ footer{
 
 /* **********************************
             MEDIA QUERY
-**********************************+ */
+********************************** */
 
 
 
-/* ********* /* DA TABLET IN SU */ ************ */
 @media screen and (min-width:768px) {
 
-
-    /* SIDEBAR */
     .sidebar{
         flex-basis: 200px;
-    
     }
 
-
-
-
-    /* HEADER */
     header{
-        width:calc(100% - 200px)
+        width: calc(100% - 200px);
     }
-}
-
-
-
-/* ********* /* DA LAPTOP IN SU */ ************ */
-@media screen and (min-width:992px) {
-
 
 }
-
-
-
-
-/* ********* /* DA DESKTOP IN SU */ ************ */
-@media screen and (min-width:1200px) {
-
-
-}
-
 
 
