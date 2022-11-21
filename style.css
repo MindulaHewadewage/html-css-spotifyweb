@@ -97,6 +97,11 @@ h6{
     margin-bottom:5px;
 }
 
+.sidebar-text{
+    display: none;
+    padding-left: 5px;
+}
+
 .small-icon img{
     width: 15px;
 }
@@ -115,15 +120,55 @@ h6{
 }
 
 
-.sidebar span{
-    display: none;
-    padding-left: 5px;
-}
+
 
 
 .profile img{
     width: 15px;
 }
+
+.playlist{
+    display: none;
+}
+
+
+.plus-div{
+    width: 50px;
+    height: 50px;
+    background-color: grey;
+    position: relative;
+
+}
+
+.plus{
+    font-size: 60px;
+    color: black;
+    margin-right: 10px;
+
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+.create-playlist{
+    display: flex;
+    align-items: center;
+}
+
+.create-playlist h4{
+    margin-left: 6px;
+}
+
+.playlist-name li{
+    padding-bottom: 20px;
+    font-size: 13px;
+}
+
+
 
 
 
@@ -143,7 +188,7 @@ main{
 /* HEADER */
 header{
     height: 80px;
-    width: calc(100% - 80px);
+    width: calc(100% - 50px);
 
     background-color:rgba(0, 0, 0, 0.4);
 
@@ -242,8 +287,12 @@ footer{
         align-items: center;
     }
 
-    .sidebar span{
+    .sidebar-text{
         display: flex;
+    }
+
+    .playlist{
+        display:inline-block;
     }
 
     
