@@ -33,6 +33,14 @@ h6{
     color: lightgrey;
 }
 
+.flex{
+    display: flex;
+}
+
+.d-none{
+    display: none;
+}
+
 
 
 /* MARGIN BOTTOM */
@@ -111,21 +119,13 @@ h6{
     display: none;
 }
 
-.profile{
+
+.profile img{
+
     height: 20px;
     width: 20px;
     background-color: grey;
     border-radius: 50%;
-    text-align: center;
-    margin-left: 16px;
-}
-
-
-
-
-
-.profile img{
-    width: 15px;
 }
 
 .playlist{
@@ -169,6 +169,20 @@ h6{
     font-size: 11px;
 }
 
+
+.sidebar-bottom h6{
+    margin-left: 10px;
+    display: none;
+}
+
+.sidebar-bottom h5{
+    margin-left: 10px;
+    display: none;
+}
+
+hr{
+    display: none;
+}
 
 
 
@@ -255,6 +269,7 @@ header{
 footer{
  height: 80px;
  background-color: #282828;
+ z-index: 2;
 }
 
 
@@ -296,6 +311,25 @@ footer{
         display:inline-block;
     }
 
+    .sidebar-bottom .download{
+       display: flex;
+    }
+    .sidebar-bottom .profile{
+        display: flex;
+     }
+    .sidebar-bottom h5{
+        display: flex;
+    }
+    .sidebar-bottom h6{
+        display: flex;
+    }
+    hr{
+        display: block;
+    }
+
+
+
+
     
 
 
@@ -318,7 +352,10 @@ footer{
     /* SIDEBAR */
     .sidebar{
         text-align: left;
-        padding: 20px;
+        padding-left: 15px;
+        padding-top: 15px;
+        padding-right: 15px;
+
     }
 
 
