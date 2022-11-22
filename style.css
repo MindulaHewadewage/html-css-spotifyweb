@@ -196,6 +196,7 @@ hr{
 /* MAIN */
 main{
     flex-grow: 1;
+    padding-top: 80px;
     background-color: #141922;
     padding: 30px;
 
@@ -204,40 +205,6 @@ main{
 
 }
 
-/* HEADER */
-header{
-    height: 80px;
-    width: calc(100% - 50px);
-
-    background-color:rgba(0, 0, 0, 0.5);
-
-    position: sticky;
-    top: 0;
-    right: 0;
-}
-
-
-/* NAVBAR */
-
-.navbar li{
-    padding: 10px 20px;
-    
-}
-
-
-.navbar ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-  
-    
-
-}
-
-
-
-/********SONGS********/
 
 .row{
     display: flex;
@@ -261,6 +228,61 @@ header{
     margin-top: 30px;
 }
 
+.popular-artists img{
+    border-radius: 50%;
+}
+
+/* HEADER */
+header{
+    height: 80px;
+    width: calc(100% - 50px);
+
+    background-color:rgba(0, 0, 0, 0.5);
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 25px;
+}
+
+header a{
+    border: 1px solid white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 11px;
+}
+
+
+/* NAVBAR */
+
+.navbar{
+    padding-top: 80px;
+}
+
+.navbar li{
+    padding: 10px 20px;
+    
+}
+
+
+.navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  
+    
+
+}
+
+
+
+/********SONGS********/
 
 
 
