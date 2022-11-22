@@ -100,21 +100,13 @@ img{
 
     display: flex;
     flex-direction: column;
-
+    justify-content: space-between;
 
 
     text-align: center;
 }
 
-.sidebar-top{
-    height:calc(100vh - 50px)
-}
-
-.sidebar-bottom{
-    height: 50px;
-}
-
-.sidebar-top img{
+.sidebar img{
     width: 20px;
     margin-bottom:5px;
 }
@@ -183,7 +175,6 @@ img{
     font-size: 11px;
 }
 
-
 .sidebar-bottom h6{
     margin-left: 10px;
     display: none;
@@ -197,6 +188,7 @@ img{
 hr{
     display: none;
 }
+
 
 
 
@@ -290,6 +282,12 @@ header a{
 
 
 
+/********SONGS********/
+
+
+
+
+
 /* !FOOTER */
 
 footer{
@@ -298,19 +296,11 @@ footer{
  display: flex;
  justify-content: space-between;
  padding: 10px;
-
-
- position: fixed;
- left: 0;
- right: 0;
- bottom: 0;
- z-index: 2;
 }
 
 
 
 .song-function{
-    flex-basis: calc(100% / 3);
     display: flex;
     align-items: center;
 }
@@ -346,10 +336,6 @@ footer{
 }
 
 /* PLAY-BAR-CONTROLS */
-footer .mid{
-    justify-content: center;
-    flex-direction: row;
-}
 
 .play-bar-icon {
     display: flex;
@@ -415,19 +401,8 @@ footer .end{
 
 
     /*? SIDEBAR */
-
     .sidebar{
         flex-basis: 200px;
-        text-align: left;
-        padding: 15px;
-
-    }
-    .sidebar-top{
-        height:calc(100vh - 30px)
-    }
-    
-    .sidebar-bottom{
-        height: 30px;
     }
 
 
@@ -482,6 +457,14 @@ footer .end{
         margin-bottom:20px ;
     }
 
+    /* SIDEBAR */
+    .sidebar{
+        text-align: left;
+        padding-left: 15px;
+        padding-top: 15px;
+        padding-right: 15px;
+
+    }
 
     /* Main */
     .col{
@@ -527,5 +510,3 @@ footer .end{
     
 
 }
-
-
