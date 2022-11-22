@@ -41,6 +41,11 @@ h6{
     display: none;
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+}
+
 
 
 /* MARGIN BOTTOM */
@@ -169,7 +174,6 @@ h6{
     font-size: 11px;
 }
 
-
 .sidebar-bottom h6{
     margin-left: 10px;
     display: none;
@@ -247,8 +251,7 @@ header{
 }
 
 .card{
-    width: 200px;
-    height: 200px;
+    flex-basis: 50%;
     background-color: white;
     margin: 10px;
     color: black;
@@ -269,10 +272,99 @@ header{
 footer{
  height: 80px;
  background-color: #282828;
- z-index: 2;
+ display: flex;
+ justify-content: space-between;
+ padding: 10px;
 }
 
 
+
+.song-function{
+    flex-basis: calc(100% / 3);
+    display: flex;
+    align-items: center;
+}
+
+/* SONG */
+.song{
+    display: flex;
+    flex-direction: row;
+}
+
+.song img{
+    width: 30px;
+    height: 30px;
+}
+
+.song-text{
+    margin-left: 10px;
+}
+
+.song h5{
+    font-size: 12px;
+}
+.song h6{
+    font-size: 10px;
+}
+
+.song-icon{
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 15px;
+
+}
+
+/* PLAY-BAR-CONTROLS */
+footer .mid{
+    justify-content: center;
+    flex-direction: row;
+}
+
+.play-bar-icon {
+    display: flex;
+    justify-content: center;
+    padding-left:15px ;
+
+}
+
+.play-bar-icon i{
+    padding: 0 10px;
+    margin-bottom:20px ;
+}
+
+.play-bar-time{
+    display: flex;
+    text-align: center;
+}
+
+.progress-bar{
+    width:150px;
+    height: 5px;
+    background-color: grey;
+    align-self: center;
+}
+/* SETTINGS */
+footer .end{
+    justify-content: flex-end;
+}
+
+
+.settings-icon{
+    display: flex;
+    padding: 0 5px;
+}
+
+.settings-icon i{
+    padding: 0 3px;
+}
+
+.progress-bar-volume{
+    width:50px;
+    height: 5px;
+    background-color: grey;
+    align-self: center;
+}
 
 
 
