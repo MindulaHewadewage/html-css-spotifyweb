@@ -282,11 +282,6 @@ header a{
 
 
 
-/********SONGS********/
-
-
-
-
 
 /* !FOOTER */
 
@@ -337,6 +332,14 @@ footer{
 
 /* PLAY-BAR-CONTROLS */
 
+.mid{
+    width: 50%;
+}
+
+.play-bar-controls{
+    width: 100%;
+}
+
 .play-bar-icon {
     display: flex;
     justify-content: center;
@@ -352,19 +355,16 @@ footer{
 .play-bar-time{
     display: flex;
     text-align: center;
+    width: 100%;
 }
 
 .progress-bar{
-    width:150px;
+    width:100%;
     height: 5px;
     background-color: grey;
     align-self: center;
 }
 /* SETTINGS */
-footer .end{
-    justify-content: flex-end;
-}
-
 
 .settings-icon{
     display: flex;
@@ -384,7 +384,12 @@ footer .end{
 
 
 
+/* ?HOVER */
 
+.card:hover img{
+    cursor: pointer;
+    filter: opacity(0.5);
+}
 
 
 
